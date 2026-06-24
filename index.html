@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💡 أرسل فكرتك وسيب الباقي علينا!</title>
+    <!-- استدعاء Tailwind CSS للتصميم العصري والسريع -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استدعاء خط Cairo المميز للعربية -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- أيقونات FontAwesome لمظهر أكثر احترافية -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        },
+                        accent: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.08), transparent 400px),
+                        radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.05), transparent 400px),
+                        #0f172a; /* خلفية داكنة فائقة الفخامة تبرز عناصر التصميم */
+        }
+        /* مظهر مخصص لمؤشر الكتابة ليتوافق مع التصميم */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4f46e5;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6366f1;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-100 flex flex-col justify-between overflow-x-hidden">
+
+    <!-- شريط علوي خفيف وجذاب -->
+    <header class="w-full py-6 px-4 md:px-8 border-b border-slate-800/80 bg-slate-900/40 backdrop-blur-md sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-gradient-to-tr from-indigo-500 to-purple-600 p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-lightbulb text-xl text-white animate-pulse"></i>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight bg-gradient-to-l from-white to-slate-400 bg-clip-text text-transparent">منصة ابتكار</span>
+            </div>
+            <div class="text-sm text-slate-400 hidden sm:flex items-center gap-2 bg-slate-800/50 py-1.5 px-3 rounded-full border border-slate-700/50">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                <span>جاهزون لتحويل أفكارك إلى واقع</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-12 px-4 md:px-6 relative">
+        <!-- أشكال هندسية مضيئة كخلفيات حركية مبهرة -->
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-10 w-72 h-72 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            
+            <!-- العمود الأيمن: العرض الترويجي الجذاب والمعلومات -->
+            <div class="lg:col-span-5 space-y-8 text-right lg:pr-4">
+                <div class="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 px-4 py-2 rounded-full text-sm font-semibold animate-float">
+                    <span>💡 فكرتك تستحق أن تخرج للنور</span>
+                </div>
+                
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-white">
+                    عندك فكرة موقع أو تطبيق وعايز تنفذها؟
+                </h1>
+                
+                <p class="text-lg text-slate-300 font-medium leading-relaxed">
+                    اكتب فكرتك بكل سهولة وسيب الباقي علينا! <span class="text-indigo-400 font-bold">🚀</span>
+                </p>
+
+                <!-- صندوق الخطوات الأنيق -->
+                <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl shadow-xl backdrop-blur-md space-y-4">
+                    <h3 class="font-bold text-lg text-emerald-400 flex items-center gap-2">
+                        <i class="fa-solid fa-square-check"></i>
+                        <span>كل اللي عليك تعمله:</span>
+                    </h3>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="bg-indigo-500/20 text-indigo-300 w-8 h-8 rounded-lg flex items-center justify-center shrink-0 font-bold border border-indigo-500/20">1</span>
+                            <div>
+                                <h4 class="font-bold text-slate-200">اكتب فكرتك بوضوح</h4>
+                                <p class="text-sm text-slate-400">اشرح التطبيق أو الموقع اللي بتحلم بيه في الخانة المخصصة.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="bg-indigo-500/20 text-indigo-300 w-8 h-8 rounded-lg flex items-center justify-center shrink-0 font-bold border border-indigo-500/20">2</span>
+                            <div>
+                                <h4 class="font-bold text-slate-200">أدخل رقم هاتفك</h4>
+                                <p class="text-sm text-slate-400">علشان نقدر نتواصل معاك ونناقش كل التفاصيل الفنية والتقنية.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="text-sm text-slate-400 leading-relaxed border-r-2 border-indigo-500/50 pr-4 py-1">
+                    بعد إرسال النموذج، سنراجع فكرتك بكل دقة ونتواصل معك في أقرب وقت ممكن لمساعدتك في تحويلها إلى مشروع حقيقي ينافس في السوق العربي والعالمي. ✨
+                </p>
+            </div>
+
+            <!-- العمود الأيسر: نموذج البيانات الاحترافي والتفاعلي -->
+            <div class="lg:col-span-7">
+                <div class="bg-slate-900/80 border border-slate-800 p-8 md:p-10 rounded-3xl shadow-2xl relative overflow-hidden backdrop-blur-xl">
+                    <!-- تأثير زجاجي علوي متوهج -->
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-indigo-500/20 rounded-full blur-2xl"></div>
+                    
+                    <div class="relative z-10 space-y-6">
+                        <div class="text-center sm:text-right pb-4 border-b border-slate-800">
+                            <h2 class="text-2xl font-bold text-white">ابدأ الآن وأرسل فكرتك!</h2>
+                            <p class="text-slate-400 text-sm mt-1">يرجى ملء الحقول التالية بعناية</p>
+                        </div>
+
+                        <!-- بداية النموذج التفاعلي -->
+                        <form id="ideaForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            
+                            <!-- خانة شرح الفكرة -->
+                            <div class="space-y-2">
+                                <label for="ideaDescription" class="block text-sm font-bold text-slate-300 flex items-center gap-2">
+                                    <i class="fa-solid fa-pen-nib text-indigo-400"></i>
+                                    <span>فكرة الموقع أو التطبيق الذي تريد تنفيذه:</span>
+                                    <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <textarea 
+                                        id="ideaDescription" 
+                                        rows="6" 
+                                        required
+                                        oninput="updateCharCount()"
+                                        class="w-full bg-slate-950/60 border-2 border-slate-800 rounded-xl p-4 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 transition-all duration-300 resize-none"
+                                        placeholder="مثال: أريد إنشاء منصة لربط مقدمي الخدمات المنزلية بالعملاء مباشرة، مع ميزة الدفع الإلكتروني وتحديد الموقع..."
+                                    ></textarea>
+                                    <div class="absolute bottom-3 left-3 text-xs text-slate-500 font-mono">
+                                        <span id="charCount">0</span> حرف
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- خانة رقم الهاتف -->
+                            <div class="space-y-2">
+                                <label for="phoneNumber" class="block text-sm font-bold text-slate-300 flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-indigo-400"></i>
+                                    <span>رقم هاتف للتواصل الفوري (واتساب أو إتصال):</span>
+                                    <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+                                        <i class="fa-solid fa-mobile-screen-button text-slate-500"></i>
+                                    </div>
+                                    <input 
+                                        type="tel" 
+                                        id="phoneNumber" 
+                                        required
+                                        pattern="[0-9+ ]{8,18}"
+                                        class="w-full bg-slate-950/60 border-2 border-slate-800 rounded-xl py-4 pr-12 pl-4 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 transition-all duration-300 text-left"
+                                        placeholder="+20 100 000 0000"
+                                    >
+                                </div>
+                                <p class="text-xs text-slate-500 text-right">يرجى التأكد من كتابة رمز الدولة بشكل صحيح ليسهل علينا الاتصال بك.</p>
+                            </div>
+
+                            <!-- زر الإرسال التفاعلي اللامع -->
+                            <button 
+                                type="submit" 
+                                id="submitBtn"
+                                class="w-full bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 flex items-center justify-center gap-2 text-lg"
+                            >
+                                <span id="btnText">📨 أرسل فكرتك الآن</span>
+                                <i id="btnIcon" class="fa-solid fa-paper-plane animate-pulse"></i>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- صندوق النجاح المنبثق التفاعلي (Success Custom Modal) -->
+    <div 
+        id="successModal" 
+        class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300"
+    >
+        <div class="bg-slate-900 border border-slate-800 max-w-md w-full rounded-2xl p-8 text-center space-y-6 shadow-2xl transform scale-90 transition-all duration-300" id="modalCard">
+            <!-- شكل نجاح مع بريق حركة -->
+            <div class="mx-auto w-20 h-20 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full flex items-center justify-center text-4xl animate-bounce">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            
+            <div class="space-y-2">
+                <h3 class="text-2xl font-black text-white">تم استلام فكرتك بنجاح! 🎉</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    نشكرك على ثقتك واختيارك لنا. سنقوم بدراسة فكرتك بعناية ومراجعتها، وسيتواصل معك أحد خبرائنا التقنيين خلال الـ 24 ساعة القادمة لمناقشة التفاصيل.
+                </p>
+            </div>
+
+            <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800 text-right text-xs text-slate-400 space-y-2">
+                <p><strong>📝 الفكرة المقدمة:</strong> <span id="modalIdeaPreview" class="text-indigo-300"></span></p>
+                <p><strong>📱 رقم الهاتف للتواصل:</strong> <span id="modalPhonePreview" class="text-emerald-400 font-mono"></span></p>
+            </div>
+
+            <button 
+                onclick="closeSuccessModal()" 
+                class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-6 rounded-xl transition-colors duration-200"
+            >
+                رائع، في الانتظار! 👍
+            </button>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة الأنيق -->
+    <footer class="w-full py-8 px-4 border-t border-slate-900/80 bg-slate-950/40 text-center text-sm text-slate-500">
+        <div class="max-w-6xl mx-auto space-y-3">
+            <p>جميع الحقوق محفوظة © <span class="text-slate-400 font-semibold">منصة ابتكار</span> 2026</p>
+            <p class="text-xs">رؤيتنا هي مساعدة رواد الأعمال المبتكرين في الوطن العربي على تحويل الأفكار والخطط الطموحة إلى مشاريع قائمة ومربحة على أرض الواقع.</p>
+        </div>
+    </footer>
+
+    <!-- كود الجافا سكريبت الخاص بالتحكم الفني والإجراءات التفاعلية -->
+    <script>
+        // دالة لتحديث عداد الحروف لخانة الوصف
+        function updateCharCount() {
+            const textarea = document.getElementById('ideaDescription');
+            const countSpan = document.getElementById('charCount');
+            countSpan.textContent = textarea.value.length;
+        }
+
+        // دالة معالجة إرسال النموذج وحفظ التفاصيل وعرض واجهة النجاح
+        function handleFormSubmit(event) {
+            event.preventDefault(); // منع الصفحة من إعادة التحميل الافتراضية
+
+            const ideaText = document.getElementById('ideaDescription').value;
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnIcon = document.getElementById('btnIcon');
+
+            // إظهار حالة جاري الإرسال في الزر مؤقتاً لمزيد من المحاكاة الإبداعية
+            submitBtn.disabled = true;
+            btnText.textContent = "جاري إرسال فكرتك الرائعة...";
+            btnIcon.className = "fa-solid fa-spinner animate-spin";
+
+            setTimeout(() => {
+                // تعبئة بيانات المعاينة داخل نافذة النجاح المنبثقة
+                document.getElementById('modalIdeaPreview').textContent = ideaText.length > 80 ? ideaText.substring(0, 80) + "..." : ideaText;
+                document.getElementById('modalPhonePreview').textContent = phoneNumber;
+
+                // إظهار نافذة النجاح الاحترافية
+                const successModal = document.getElementById('successModal');
+                const modalCard = document.getElementById('modalCard');
+                
+                successModal.classList.remove('opacity-0', 'pointer-events-none');
+                successModal.classList.add('opacity-100');
+                modalCard.classList.remove('scale-90');
+                modalCard.classList.add('scale-100');
+
+                // إعادة تهيئة النموذج لإرسال جديد
+                document.getElementById('ideaForm').reset();
+                updateCharCount();
+
+                // إعادة تهيئة حالة الزر
+                submitBtn.disabled = false;
+                btnText.textContent = "📨 أرسل فكرتك الآن";
+                btnIcon.className = "fa-solid fa-paper-plane animate-pulse";
+            }, 1200); // محاكاة عملية إرسال سريعة لمدة 1.2 ثانية
+        }
+
+        // دالة إغلاق النافذة المنبثقة للنجاح
+        function closeSuccessModal() {
+            const successModal = document.getElementById('successModal');
+            const modalCard = document.getElementById('modalCard');
+            
+            successModal.classList.add('opacity-0', 'pointer-events-none');
+            successModal.classList.remove('opacity-100');
+            modalCard.classList.add('scale-90');
+            modalCard.classList.remove('scale-100');
+        }
+    </script>
+</body>
+</html>
